@@ -1,0 +1,34 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-color: white;
+}
+
+.row {
+
+}
+
+#photo {
+  padding: 1%;
+}
+
+#sidebar li {
+
+}
+
+.card {
+  margin: 1%;
+}
+
+.progress-label {
+
+    margin-right: 2em;
+}
+
+.card-body li {
+  margin: 1%;
+}

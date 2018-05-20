@@ -8,56 +8,232 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title></title>
+    <title>Zachary Cox</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarNav" data-offset="0">
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+    
+    <!-- Jumbotron -->
     <div id="jumbotron" class="jumbotron jumbotron-fluid">
       <div class="container">
-        <img src="images/Personal-Logo.jpeg" alt="" style="width:700px;height:700px; class: center;">
+        <img class="logo" src="images/Personal-Logo.jpeg" alt="">
       </div>
       <div id="square" class="container">
-        <img src="octicons-7.2.0/package/build/svg/chevron-down.svg" alt="" style="width:70%;height:70%;margin-top:15%;color: red;">
+        <a href="#Profile" id="chevron">
+          <img src="octicons-7.2.0/package/build/svg/chevron-down.svg" alt="">
+        </a>
       </div>
     </div>
+    
+    <!-- Navbar -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg col-lg-1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#Profile">Profile</a>
+      <div id="navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-collapse-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="hamburger" src="octicons-7.2.0/package/build/svg/grabber.svg" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Experiences">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Abilities">Abilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Profile -->
+      <div class="container" id="Profile" style="height: 100vh; background-color: #14325C;">
+        <h2 class="title" style="align: center;">Profile</h2>
+      </div>
+      
+      <!-- Experience -->
+      <div class="container" id="Experiences" style="height: 100vh; background-color: #F4E3B1;">
+        <h2 class="title">Experiences</h2>
+      </div>
+      
+      <!-- Abilities -->
+      <div class="container" id="Abilities" style="height: 100vh; background-color: #14325C;">
+        <h2 class="title">Abilities</h2>
+        <div class="row" id="abilities-container">
+          <ul class="col-lg-6">
+            <li class="cpp">
+              <span class="ability-title">C++</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star-gold.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Experiences">Experiences</a>
+            <li class="java">
+              <span class="ability-title">Java</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Abilities">Abilities</a>
+            <li class="python">
+              <span class="ability-title">Python</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Projects">Projects</a>
+            <li class="html">
+              <span class="ability-title">HTML(5)</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
+            <li class="css">
+              <span class="ability-title">CSS(3)</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="javascript">
+              <span class="ability-title">Javascript</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+          </ul>
+          <ul class="col-lg-6">
+            <li class="bootstrap">
+              <span class="ability-title">Bootstrap 4</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="wordpress">
+              <span class="ability-title">Wordpress</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="mysql">
+              <span class="ability-title">MySQL</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="html">
+              <span class="ability-title">HTML</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="css">
+              <span class="ability-title">CSS</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
+            </li>
+            <li class="javascript">
+              <span class="ability-title">Javascript</span>
+              <span class="ability-rating">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+                <img src="octicons-7.2.0/package/build/svg/star.svg" alt="">
+              </span>
             </li>
           </ul>
         </div>
-      </nav>
-      <div class="container" id="Profile" style="height: 100vh; background-color: #14325C;">
-
       </div>
-      <div class="container" id="Experiences" style="height: 100vh; background-color: #F4E3B1;">
-
+      
+      <!-- Projects -->
+      <div class="container" id="Projects" style="background-color: #F4E3B1;">
+        <h2 class="title">Projects</h2>
+        <div class="row" id="projects-container">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-left">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-right">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container" id="Abilities" style="height: 100vh; background-color: #14325C;">
-
-      </div>
-      <div class="container" id="Projects" style="height: 100vh; background-color: #F4E3B1;">
-
-      </div>
+      
+      <!-- Contact -->
       <div class="container" id="Contact" style="height: 100vh; background-color: #14325C;">
-
+        <h2 class="title">Contact</h2>
       </div>
     </div>
   </body>

@@ -1,8 +1,22 @@
+/* Global */
 html, body {
   height: 100%;
   width: 100%;
   max-width: 100%;
 }
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  margin: 0%;
+  padding: 0%;
+  max-width: 100%;
+}
+
+/* Jumbotron */
 
 .jumbotron {
   height: 100vh;
@@ -11,62 +25,30 @@ html, body {
   background-color: #F4E3B1;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.navbar {
-  padding: 0%;
-  z-index: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10vh;
-  float: right;
-  right: 100px;
-  background-color: #A53A3B;
-  width: 7rem;
-}
-
-.navbar-nav {
-  display: block;
-}
-
-ul {
-  width: 100%;
-  height: 25rem;
-}
-
-li {
-  text-align: center;
-  line-height: 4rem;
-  width: 100%;
-  height: 5rem;
-}
-
-a {
-  color: white/*#F4E3B1*/;
-  height: 5rem;
+.container .logo {
+  width: 30%;
+  height: 30%;
+  margin: auto;
   vertical-align: middle;
 }
 
-.container {
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-  max-width: 100%;
+@media (max-width: 768px){
+  .container .logo {
+    width: 75%;
+    height: 75%;
+  }
 }
 
-.active {
-  background-color: white/*#5398D9*/;
-  color: #A53A3B;
+@media (max-width: 576px){
+  .container .logo {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #square {
   position: absolute;
-  right: 100px;
+  right: 5%;
   bottom: 0vh;
   z-index: 1;
   background-color: #A53A3B;
@@ -75,8 +57,161 @@ a {
   line-height: 4rem;
   float: right;
   text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-#square > img {
+@keyframes example {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(5px);}
+  100% {transform: translateY(0px);}
+}
+
+#square img {
   vertical-align: middle;
+  width: 70%;
+  height: 70%;
+  margin-top: 15%;
+  color: red;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+  #square {
+    width: 100%;
+    border-radius: 0px;
+    right: 0%;
+  }
+  
+  #square img {
+    vertical-align: middle;
+    margin-top: 0%;
+    
+  }
+}
+
+/* Navbar */
+
+#navbar-container {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10vh;
+  float: right;
+  right: 5%;
+  width: 7rem;
+}
+
+.navbar {
+  background-color: #A53A3B;
+  border-radius: 5px;
+  width: inherit;
+  padding: 0rem;
+}
+
+.navbar-nav {
+  display: block;
+}
+
+#navbarNav {
+  width: 7rem;
+}
+
+#navbarNav ul {
+  width: inherit;
+  height: 25rem;
+}
+
+#navbarNav li {
+  text-align: center;
+  line-height: 4rem;
+  width: inherit;
+  height: 5rem;
+}
+
+a {
+  color: white/*#F4E3B1*/;
+  height: inherit;
+  vertical-align: middle;
+}
+
+.active {
+  background-color: white/*#5398D9*/;
+  color: #A53A3B;
+  border-radius: 0px;
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+}
+
+@media(max-width: 768px) {  
+  #navbar-container {
+    width: 100%;
+  }
+  
+  .navbar {
+    border-radius: 0px;
+  }
+  
+  #navbarNav ul {
+    width: auto;
+  }
+}
+
+/* Abilities */
+
+#abilities-container li {
+  list-style-type: none;
+  color: white;
+}
+
+#abilities-container {
+  margin: 1rem 20%;
+}
+
+.ability-rating {
+  float: right;
+  height: 1rem;
+  transition: transform 0.1s ease-in-out;
+  transform-origin: right;
+}
+
+#abilities-container li:hover > .ability-rating {
+  transform: scale(1.1);
+}
+
+/*Projects*/
+
+#Projects {
+  background-color: #4292f4;
+  min-height: 100vh;
+}
+
+@media (max-height:768px) {
+
+}
+
+.card {
+  margin: auto;
+  border-radius: 0px;
+  width: 18rem;
+}
+
+.card-left {
+  float: right;
+}
+
+.card-right {
+  float: left;
+}
+
+.col-lg-4 {
+  padding: 0;
+}
+
+.btn {
+  border-radius: 0px;
 }

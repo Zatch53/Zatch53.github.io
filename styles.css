@@ -3,9 +3,13 @@ html, body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
+  font-weight: 100;
+  font-size: 50px;
   text-align: center;
   color: white;
 }
@@ -23,11 +27,16 @@ h2 {
   text-align: center;
   margin: 0%;
   background-color: #F4E3B1;
+  /*
+  background-image: url(images/dusk-evening-golden-hour-1097518.jpg);
+  background-position: center;
+  background-size: cover;
+  */
 }
 
 .container .logo {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   margin: auto;
   vertical-align: middle;
 }
@@ -94,6 +103,10 @@ h2 {
 
 /* Navbar */
 
+#hamburger {
+  height: 50px;
+}
+
 #navbar-container {
   z-index: 1;
   position: -webkit-sticky;
@@ -137,19 +150,16 @@ a {
   vertical-align: middle;
 }
 
-.active {
+.active{
   background-color: white/*#5398D9*/;
   color: #A53A3B;
   border-radius: 0px;
 }
 
-.navbar-toggler-icon {
-  background-color: black;
-}
-
 @media(max-width: 768px) {  
   #navbar-container {
     width: 100%;
+    top: 0px;
   }
   
   .navbar {
@@ -161,11 +171,25 @@ a {
   }
 }
 
+/* Profile */
+
+.subheading {
+  text-align: center;
+  color: white;
+}
+
 /* Abilities */
+
+#abilities-container h3 {
+  color: white;
+  text-align: center;
+  margin: 3rem 0rem 1rem 0rem;
+}
 
 #abilities-container li {
   list-style-type: none;
   color: white;
+  margin: .5rem 0rem;
 }
 
 #abilities-container {
@@ -183,6 +207,10 @@ a {
   transform: scale(1.1);
 }
 
+#abilities-container li:hover {
+  background-color: #A53A3B;
+}
+
 /*Projects*/
 
 #Projects {
@@ -190,12 +218,8 @@ a {
   min-height: 100vh;
 }
 
-@media (max-height:768px) {
-
-}
-
 .card {
-  margin: auto;
+  margin: 1rem;;
   border-radius: 0px;
   width: 18rem;
 }
@@ -208,10 +232,28 @@ a {
   float: left;
 }
 
-.col-lg-4 {
-  padding: 0;
-}
-
 .btn {
   border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .card-right {
+    float: none;
+    margin: auto;
+  }
+  
+  .card-right {
+    float: none;
+    margin: auto;
+  }
+  
+  .card-left {
+    float: none;
+    margin: auto;
+  }
+  
+  .card-left {
+    float: none;
+    margin: 1rem auto;
+  }
 }

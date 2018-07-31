@@ -179,3 +179,7 @@
 #skills_section h3 {
     margin-top: 30px;
 }
+
+footer .icon:hover {
+    color: red !important;
+}

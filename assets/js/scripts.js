@@ -22,3 +22,23 @@ function hiddenHelper (elements, value) {
         }
     }
 }
+
+function ratings () {
+    ratings = document.querySelectorAll('.rating');
+    ratings = ratings.length ? ratings : [ratings];
+    for(var index = 0; index < ratings.length; index++){
+        if(ratings[index].id == "5"){
+            ratings[index].innerHTML = "<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i>";
+        } else if(ratings[index].id == "4"){
+            ratings[index].innerHTML = "<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i>";
+        } else if(ratings[index].id == "3"){
+            ratings[index].innerHTML = "<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>";
+        } else if(ratings[index].id == "2"){
+            ratings[index].innerHTML = "<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>";
+        } else if(ratings[index].id == "1"){
+            ratings[index].innerHTML = "<i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>";
+        }
+    }
+}
+
+ratings();

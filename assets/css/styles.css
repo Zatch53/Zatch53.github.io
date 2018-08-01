@@ -138,8 +138,11 @@
 
 .skill:hover > .rating {
     cursor: pointer;
-    font-size: 15px;
     transform-style: flat;
+}
+
+.skill .rating i {
+    margin-left: 1px;
 }
 
 .skill:hover > .rating > i {

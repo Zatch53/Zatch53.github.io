@@ -89,14 +89,17 @@
 
 							$window.off('scroll.strata_parallax');
 							$header.css('background-position', 'top left, center center');
+							$footer.css('background-position', 'top left, center center');
 
 						}
 						else {
 
 							$header.css('background-position', 'left 0px');
+							$footer.css('background-position', 'left 0px');
 
 							$window.on('scroll.strata_parallax', function() {
 								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+								$footer.css('background-position', 'right ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 							});
 
 						}

@@ -176,10 +176,62 @@
     margin: 0px;
 }
 
-#skills_section h3 {
+h2 {
     margin-top: 30px;
 }
 
-footer .icon:hover {
+#footer {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, fixed;
+    background-image: url("../../images/OAFbZbI.jpg");
+    background-position: right, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300%;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    right: 0;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 35%;
+    z-index: 0;
+    clip-path: inset(0px 0px 0px 440px);
+}
+
+#footer .inner {
+    margin: 10rem 0rem;
+}
+
+#footer .inner .icons {
+    background: black;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 0px 7px;
+    opacity: 0.7;
+}
+
+#footer .inner li {
+    margin: 2px;
+    padding: 0px;
+    display: block;
+}
+
+#footer .icon:hover {
     color: red !important;
 }

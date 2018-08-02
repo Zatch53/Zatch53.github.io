@@ -1,0 +1,241 @@
+//Global
+.button {
+    border-radius: 0px !important;
+    color: white !important;
+    background-color: #14325C;
+    border-color: white;
+}
+
+.button:hover {
+    border-color: #14325C !important;
+    color: #14325C !important;
+    background-color: white;
+}
+
+//Header
+#header {
+    h1 {
+        z-index: 1;
+        position: absolute;
+        right: 3rem;
+        top: 24.5rem;
+    }
+    
+    #header_bg {
+        background-color: black;
+        height: 7.5rem;
+        width: 20rem;
+        position: absolute;
+        right: 0rem;
+        top: 23.25rem;
+        z-index: 0;
+        opacity: 0.7;
+    }
+}
+
+//One
+#one {
+    h4 {
+        float: right;
+    }
+    
+    p {
+        margin-left: 10px;
+    }
+}
+
+//Two
+#two {
+    #project1 {
+        background-image: url('../../images/website_screenshot.png');
+        height: 210px;
+    }
+    
+    #project3 {
+        background-image: url('../../images/website_screenshot.png');
+        height: 210px;
+    }
+    
+    #project4 {
+        background-image: url('../../images/website_screenshot.png');
+        height: 210px;
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 0;
+        transition-duration: 0.5s;
+        height: 50px;
+
+        h3, p{
+            text-align: left;
+            margin: 12px 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+    
+    .thumb:hover > .overlay {
+        height: 100%;
+    }
+    
+    .hidden{
+        display: none;
+    }
+    
+}
+
+//Skills
+#skills_section {
+    .fa-star, .fa-star-o {
+        width: 10px;
+        margin: 0px 0px;
+        padding: 0px 7px;
+        color: #14325C;
+    }
+    
+    .rating {
+        float: right;
+        transition-duration: 0.2s;
+        padding-right: 20px;
+
+        i {
+            transition-duration: 0.2s;
+            margin-left: 1px;
+        }
+    }
+
+    .skill {
+        width: 50%;
+        height: 25px;
+        padding-right: 0px;
+        padding-left: 5px;
+        margin: 0px 0px;
+
+        p {
+            float: left;
+            margin-left: 0px;
+        }
+    }
+
+    .skill:hover > .rating {
+        cursor: pointer;
+        transform-style: flat;
+    }
+
+    .skill:hover > .rating > i {
+        margin-left: 3px;
+    }
+    
+    .skill:hover {
+        background-color: #EEE;
+    }
+    
+    #skills_container {
+        margin-left: 0px;
+        padding: 0px;
+
+        .row {
+            width: inherit;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+    
+    h2 {
+        margin-top: 30px;
+    }
+}
+
+//Three
+#three {
+    input, textarea {
+        border-radius: 0px;
+        border-color: #14325C !important;
+        background-color: white;
+    }
+
+    .button {
+        border-color: white !important;
+        background-color: #14325C;
+        color: white !important;
+    }
+
+    .button:hover {
+        border-color: #14325C !important;
+        color: #14325C !important;
+        background-color: white;
+    }
+
+    a:hover {
+        color: #14325C !important;
+    }
+}
+
+//Footer
+#footer {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, fixed;
+    background-image: url("../../images/OAFbZbI.jpg");
+    background-position: right, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300%;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    right: 0;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 35%;
+    z-index: 0;
+    clip-path: inset(0px 0px 0px 90%);
+    
+    .inner {
+        margin: 10rem 0rem;
+
+        .icons {
+            background: black;
+            border-radius: 7px;
+            padding: 12px;
+            margin: 0px 5%;
+            opacity: 0.7;
+        }
+
+        li {
+            margin: 2%;
+            padding: 0px;
+            display: block;
+        }
+    }
+    
+    .icon:hover {
+        color: red !important;
+    }
+}

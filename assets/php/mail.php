@@ -18,7 +18,7 @@ This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
 $email_address = $_REQUEST['email_address'];
-$comments = $_REQUEST['comments'];
+$comments = $_REQUEST['message'];
 $first_name = $_REQUEST['first_name'];
 $msg = 
 "First Name: " . $first_name . "\r\n" . 

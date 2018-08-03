@@ -102,11 +102,19 @@
   border-radius: 0px;
   border-color: #14325C !important;
   background-color: white; }
-#three .button {
+#three #email_name {
+  width: 49%;
+  float: left;
+  margin-bottom: 10px; }
+#three #email_reply_to {
+  width: 49%;
+  float: right;
+  margin-bottom: 10px; }
+#three #email_submit {
   border-color: white !important;
   background-color: #14325C;
   color: white !important; }
-#three .button:hover {
+#three #email_submit:hover {
   border-color: #14325C !important;
   color: #14325C !important;
   background-color: white; }

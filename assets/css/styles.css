@@ -79,6 +79,7 @@
 #skills_section .skill {
   width: 50%;
   height: 25px;
+  padding-left: 2px;
   margin: 0px 0px;
   line-height: 25px; }
   #skills_section .skill p {

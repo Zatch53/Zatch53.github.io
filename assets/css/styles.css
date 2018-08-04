@@ -12,15 +12,15 @@
 #header h1 {
   z-index: 1;
   position: absolute;
-  right: 3rem;
-  top: 24.5rem; }
+  right: 8%;
+  top: 53.5%; }
 #header #header_bg {
   background-color: black;
   height: 7.5rem;
   width: 20rem;
   position: absolute;
-  right: 0rem;
-  top: 23.25rem;
+  right: 0;
+  top: 50.5%;
   z-index: 0;
   opacity: 0.7; }
 

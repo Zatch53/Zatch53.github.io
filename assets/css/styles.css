@@ -79,12 +79,12 @@
 #skills_section .skill {
   width: 50%;
   height: 25px;
-  padding-right: 0px;
-  padding-left: 5px;
-  margin: 0px 0px; }
+  margin: 0px 0px;
+  line-height: 25px; }
   #skills_section .skill p {
     float: left;
-    margin-left: 0px; }
+    margin-left: 0px;
+    vertical-align: middle; }
 #skills_section .skill:hover > .rating {
   cursor: pointer;
   transform-style: flat; }
